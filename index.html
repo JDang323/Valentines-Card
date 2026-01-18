@@ -8,25 +8,138 @@
   <!-- Link CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <!-- Main card -->
-  <div class="card">
+  <!-- SCREEN 1: Question -->
+  <div class="screen active" id="screen-question">
+    <div class="card">
+      <h1>Will you be my Valentine? 💖</h1>
+      <p class="subtitle">I promise snacks, cuddles, and love! And cute clothes</p>
+      <span class = "image">
+        <img src = "assets/gifs/hamster-pleading.gif"/>
+      </span>
 
-    <h1>Will you be my Valentine? 💘</h1>
-
-    <p class="subtitle">
-      I promise snacks, cuddles, and bad jokes 🍫
-    </p>
-
-    <div class="buttons">
-      <button id="yesBtn">Yes 💕</button>
-      <button id="noBtn">No 😤</button>
+      <div class="buttons">
+        <button id="yesBtn">Yes 💕</button>
+        <button id="noBtn">No 😤</button>
+      </div>
     </div>
-
   </div>
 
-  <!-- Link JavaScript -->
+  <!-- SCREEN 2: Are you sure? -->
+  <div class="screen" id="screen-sure">
+    <div class="card success">
+      <h1>Are you sure? 💖</h1>
+      <p>I have to make sure that you're sure it's a yes</p>
+      <p>Just some extra steps</p>
+      <span class = "image">
+        <img src = "assets/pics/2.jpg"/>
+      </span>
+      <div class="buttons">
+        <button id="yesBtn1">Yes 💕</button>
+        <button id="noBtn1">No 😤</button>
+      </div>
+
+    </div>
+  </div>
+
+<!-- SCREEN 2: Are you sure2? -->
+  <div class="screen" id="screen-sure2">
+    <div class="card success">
+      <h1>Are you ABSOLUTELY sure? 💖</h1>
+      <p>I really have to make sure that you're certain of it!</p>
+      <p>Bc what if you misclicked and wanted to say no?</p>
+      <span class = "image">
+        <img src = "assets/pics/3.jpg"/>
+      </span>
+      <div class="buttons">
+        <button id="yesBtn2">Yes 💕</button>
+        <button id="noBtn2">No 😤</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- SCREEN 3: Prompt Loop -->
+<div class="screen" id="screen-loop">
+  <div class="card loop-card">
+    <h1 id="loopMessage">Do you want candy? 🍬</h1>
+    <button id="loopNoBtn">No 😤</button>
+    <button id="loopYesBtn">Yes 💕</button>
+  </div>
+</div>
+
+  <!-- SCREEN 3: Success -->
+  <div class="screen" id="screen-yes">
+    <div class="card success">
+      <h1>YIPPPPEEEEEEEEEEEEEEEEEEEEEE OUIIIIIII!!! 💖</h1>
+      <p>Happy Valentine’s Day 🥰</p>
+      <p>I'm so happy you ge to be my Valentine 😌</p>
+      <span class = "image">
+        <img src = "assets/gifs/dance.gif"/>
+      </span>
+
+      <button id="nextBtn2">Next ➡️</button>
+    </div>
+  </div>
+
+  <!-- SCREEN 4: Final -->
+  <div class="screen" id="screen-final">
+    <div class="card final">
+      <h1>I Love You ❤️</h1>
+      <span class = "image" >
+        <img src = "assets/gifs/hearts.gif">
+      </span>
+      <p>See you on Valentine’s Day 💕</p>
+      <p>Let's get all dressed up and spend time together!</p>
+      <button id="nextBtn3">Next ➡️</button>
+    </div>
+  </div>
+
+    <!-- SCREEN 4: Final1 -->
+  <div class="screen" id="screen-final1">
+    <div class = "card final">
+        <h1>I Love You ❤️</h1>
+        <p>Let's see some of our memories</p>
+        <p>I can't wait to make more with you forever ❤️</p>
+        <div class="carousel">
+            <img src="assets/pics/19.jpg" class="carousel-item active">
+            <img src="assets/pics/1.jpg" class="carousel-item">
+            <img src="assets/pics/20.jpg" class="carousel-item">
+            <img src="assets/pics/2.jpg" class="carousel-item">
+            <img src="assets/pics/3.jpg" class="carousel-item">
+            <img src="assets/pics/4.jpg" class="carousel-item">
+            <img src="assets/pics/5.jpg" class="carousel-item">
+            <img src="assets/pics/21.jpg" class="carousel-item">
+            <img src="assets/pics/6.jpg" class="carousel-item">
+            <img src="assets/pics/7.jpg" class="carousel-item">
+            <img src="assets/pics/8.jpg" class="carousel-item">
+            <img src="assets/pics/9.jpg" class="carousel-item">
+            <img src="assets/pics/10.jpg" class="carousel-item">
+            <img src="assets/pics/11.jpg" class="carousel-item">
+            <img src="assets/pics/12.jpg" class="carousel-item">
+            <img src="assets/pics/13.jpg" class="carousel-item">
+            <img src="assets/pics/14.jpg" class="carousel-item">
+            <img src="assets/pics/15.jpg" class="carousel-item">
+            <img src="assets/pics/16.jpg" class="carousel-item">
+            <img src="assets/pics/17.jpg" class="carousel-item">
+            <img src="assets/pics/18.jpg" class="carousel-item">
+            
+            
+            
+        </div>
+  </div>
+  </div>
+
+    <!-- SCREEN 4: Final
+  <div class="screen" id="screen-final">
+    <img class="fullscreen-gif" src="assets/gifs/foxy.gif" />
+    <audio id="finalMusic" src="assets/audio/foxy-jumpscare-fnaf-2-made-with-Voicemod.mp3" preload="auto"></audio>
+  </div>
+  -->
+
   <script src="script.js"></script>
 </body>
+
 </html>
